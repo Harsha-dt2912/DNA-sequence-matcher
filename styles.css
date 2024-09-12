@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #FFD700;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+.input-group {
+    margin: 20px auto;
+    text-align: left;
+    max-width: 600px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background-color: #333333;
+    color: #FFFFFF;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    border-color: #FFD700;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-group {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.5em;
+    background-color: #FFD700;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFC107;
+    color: #000000;
+}
+
+#results {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+    border: 1px solid #666666;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #222222;
+}
+
+#outputArea pre {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+#shiftTableArea {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+#shiftTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+#shiftTable th, #shiftTable td {
+    padding: 10px;
+    border: 1px solid #666666;
+    text-align: center;
+}
+
+#shiftTable th {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+#shiftTable td {
+    background-color: #333333;
+}
+
+.highlight {
+    background-color: #FFD700;
+    color: #000000;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 3px;
+}

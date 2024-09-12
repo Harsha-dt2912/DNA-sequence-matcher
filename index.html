@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Sequence Matching</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>DNA Sequence Matcher</h1>
+    <div class="input-group">
+        <label for="haystack">DNA Sequence (Haystack):</label>
+        <textarea id="haystack" rows="4" placeholder="Enter the DNA sequence..."></textarea>
+    </div>
+    <div class="input-group">
+        <label for="needle">Pattern (Needle):</label>
+        <textarea id="needle" rows="2" placeholder="Enter the pattern to search..."></textarea>
+    </div>
+    <div class="button-group">
+        <button class="btn" onclick="search()">Search</button>
+        <button class="btn" onclick="startAutomaticSearch()">Start Auto</button>
+        <button class="btn" onclick="stopAutomaticSearch()">Stop Auto</button>
+        <button class="btn" onclick="previousStep()">Previous Step</button>
+        <button class="btn" onclick="reset()">Reset</button>
+    </div>
+    <div id="results">
+        <p><strong>Haystack Index:</strong> <span id="haystackIndex">0/0</span></p>
+        <p><strong>Comparisons:</strong> <span id="comparisons">0</span></p>
+        <div id="outputArea">
+            <pre>No steps to display yet.</pre>
+        </div>
+        <p id="matchIndices"></p>
+    </div>
+    <div id="shiftTableArea">
+        <h2>Shift Table</h2>
+        <table id="shiftTable">
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>Shift</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
